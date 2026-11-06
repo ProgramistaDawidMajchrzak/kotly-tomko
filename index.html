@@ -45,7 +45,13 @@
     "logo": "https://kotlytomko.pl/assets/img/logo-tomko.svg",
     "image": "https://kotlytomko.pl/assets/img/og-tomko.jpg",
     "telephone": "+48 602 628 145",
-    "email": "tomko@kotlytomko.pl",
+    "email": "tomko1994@o2.pl",
+    "taxID": "7771000214",
+    "contactPoint": [
+      { "@type": "ContactPoint", "telephone": "+48 600 674 392", "contactType": "customer service", "name": "Biuro" },
+      { "@type": "ContactPoint", "telephone": "+48 602 628 145", "contactType": "emergency", "name": "Tomasz Woźniak" },
+      { "@type": "ContactPoint", "telephone": "+48 787 180 794", "contactType": "sales", "name": "Stanisław Woźniak" }
+    ],
     "foundingDate": "1994",
     "founder": { "@type": "Person", "name": "Tomasz Woźniak" },
     "address": {
@@ -57,7 +63,7 @@
       "addressCountry": "PL"
     },
     "areaServed": { "@type": "Country", "name": "Polska" },
-    "knowsAbout": ["kotły parowe", "kotły wodne", "zbiorniki ciśnieniowe", "autoklawy", "wytwornice pary", "wymienniki ciepła", "rurociągi", "próby szczelności", "dozór techniczny UDT", "badania VT", "badania PT"]
+    "knowsAbout": ["kotły parowe", "kotły wodne", "zbiorniki ciśnieniowe", "autoklawy", "wytwornice pary", "wymienniki ciepła", "rurociągi", "próby szczelności", "dozór techniczny UDT", "badania VT", "badania PT", "prace spawalnicze", "konstrukcje stalowe", "montaż urządzeń"]
   }
   </script>
 </head>
@@ -96,6 +102,8 @@
     <symbol id="i-flask" viewBox="0 0 24 24"><path d="M10 2v7.31M14 9.3V2M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0M5.52 16h12.96"/></symbol>
     <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
     <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65M22 12.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-brick" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 9.33h18M3 14.67h18M12 4v5.33M7.5 9.33v5.34M16.5 9.33v5.34M12 14.67V20"/></symbol>
+    <symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l8 5H4z"/><path d="M4 18h16"/></symbol>
     <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol>
   </svg>
 
@@ -107,8 +115,9 @@
         <span><svg class="icon"><use href="#i-pin"/></svg>Przeźmierowo k. Poznania · działamy w całej Polsce</span>
       </div>
       <div class="topbar__contact">
-        <a href="mailto:tomko@kotlytomko.pl"><svg class="icon"><use href="#i-mail"/></svg>tomko@kotlytomko.pl</a>
-        <a class="topbar__alert" href="tel:+48602628145"><svg class="icon"><use href="#i-alert"/></svg>Awaria? 602 628 145</a>
+        <a class="topbar__mail" href="mailto:tomko1994@o2.pl"><svg class="icon"><use href="#i-mail"/></svg>tomko1994@o2.pl</a>
+        <a class="topbar__phone" href="tel:+48600674392"><svg class="icon"><use href="#i-phone"/></svg><span>Biuro</span>600 674 392</a>
+        <a class="topbar__phone topbar__alert" href="tel:+48602628145"><svg class="icon"><use href="#i-alert"/></svg><span>Awaria</span>602 628 145</a>
       </div>
     </div>
   </div>
@@ -122,17 +131,18 @@
       </a>
       <nav class="nav" id="nav" aria-label="Główna nawigacja">
         <ul class="nav__list">
+          <li><a href="#o-firmie">O firmie</a></li>
           <li><a href="#uslugi">Usługi</a></li>
           <li><a href="#urzadzenia">Urządzenia</a></li>
           <li><a href="#realizacje">Realizacje</a></li>
           <li><a href="#branze">Branże</a></li>
-          <li><a href="#o-firmie">O firmie</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
         <div class="nav__mobile-extra">
-          <a class="btn" href="tel:+48602628145"><svg class="icon"><use href="#i-phone"/></svg>Zadzwoń: 602 628 145</a>
+          <a class="btn" href="tel:+48600674392"><svg class="icon"><use href="#i-phone"/></svg>Biuro: 600 674 392</a>
+          <a class="btn btn--spark" href="tel:+48602628145"><svg class="icon"><use href="#i-alert"/></svg>Awaria: 602 628 145</a>
           <a class="btn btn--ghost" href="#kontakt">Zapytaj o wycenę</a>
-          <p>tomko@kotlytomko.pl</p>
+          <p>tomko1994@o2.pl</p>
         </div>
       </nav>
       <a class="btn btn--sm header__cta" href="#kontakt">Zapytaj o wycenę</a>
@@ -189,6 +199,36 @@
         <div class="stat"><div class="stat__value">30<span>+</span></div><div class="stat__label">lat doświadczenia w branży</div></div>
         <div class="stat"><div class="stat__value">UDT</div><div class="stat__label">uprawnienia firmy i&nbsp;pracowników</div></div>
         <div class="stat"><div class="stat__value">PL</div><div class="stat__label">realizacje na terenie całej Polski</div></div>
+      </div>
+    </section>
+
+    <!-- O FIRMIE -->
+    <section class="section section--soft" id="o-firmie">
+      <div class="container about">
+        <div class="about__text reveal">
+          <p class="eyebrow">O firmie</p>
+          <h2>Ponad 30 lat doświadczenia w&nbsp;urządzeniach ciśnieniowych</h2>
+          <p class="lead">Przedsiębiorstwo Usługowo-Handlowe TOMKO rozpoczęło działalność w 1994 roku jako kontynuacja firmy ARGAJ Zygmunt Woźniak. Początkowo specjalizowaliśmy się w handlu armaturą przemysłową.</p>
+          <p>Dziś naszą główną działalnością są remonty i modernizacje urządzeń ciśnieniowych podlegających Urzędowi Dozoru Technicznego. Firma, jak i jej pracownicy, posiadają certyfikaty UDT niezbędne do wykonywania tych usług. Dysponujemy:</p>
+          <ul class="about__list">
+            <li><svg class="icon"><use href="#i-check"/></svg>doświadczoną załogą,</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>dobrze zorganizowanymi, specjalistycznymi służbami spawalniczymi i kontroli jakości robót,</li>
+            <li><svg class="icon"><use href="#i-check"/></svg>parkiem maszynowym i bazą transportową, które pozwalają samodzielnie realizować podejmowane zadania.</li>
+          </ul>
+          <div class="timeline">
+            <div class="timeline__item"><div class="timeline__year">1994</div><p>Start działalności — handel armaturą przemysłową, kontynuacja firmy ARGAJ Zygmunt Woźniak.</p></div>
+            <div class="timeline__item"><div class="timeline__year">Dziś</div><p>Remonty i modernizacje urządzeń pod dozorem UDT na terenie całego kraju.</p></div>
+          </div>
+          <div class="about__sign">
+            <span class="avatar" aria-hidden="true">TW</span>
+            <div><strong>Tomasz Woźniak</strong><span>właściciel</span></div>
+          </div>
+        </div>
+        <div class="about__media reveal">
+          <img src="assets/img/zespol-tomko-640.webp" srcset="assets/img/zespol-tomko-640.webp 640w, assets/img/zespol-tomko-1100.webp 1100w" sizes="(max-width: 1024px) 50vw, 300px" width="640" height="853" loading="lazy" decoding="async" alt="Pracownicy TOMKO omawiają prace przy otwartym kotle">
+          <img src="assets/img/ekipa-kotlownia-640.webp" srcset="assets/img/ekipa-kotlownia-640.webp 640w, assets/img/ekipa-kotlownia-1100.webp 1100w" sizes="(max-width: 1024px) 50vw, 300px" width="640" height="480" loading="lazy" decoding="async" alt="Ekipa TOMKO w kamizelkach odblaskowych podczas remontu kotła">
+          <img src="assets/img/g-ekipa-przy-kotle-640.webp" sizes="(max-width: 1024px) 50vw, 300px" width="640" height="853" loading="lazy" decoding="async" alt="Pracownicy TOMKO przy kotle w trakcie remontu">
+        </div>
       </div>
     </section>
 
@@ -254,6 +294,16 @@
               <p>Dostawa armatury przemysłowej według zapotrzebowania klienta.</p>
             </article>
           </div>
+
+          <article class="card service-extra reveal">
+            <div class="card__icon"><svg class="icon"><use href="#i-wrench"/></svg></div>
+            <div class="service-extra__body">
+              <span class="tag tag--soft">Także poza dozorem UDT</span>
+              <h3>Spawalnictwo, montaż i konstrukcje stalowe</h3>
+              <p>Nasi spawacze pracują nie tylko przy urządzeniach ciśnieniowych. Wykonujemy również prace spawalnicze na zlecenie, montaż urządzeń i instalacji oraz drobne konstrukcje stalowe — w zakładzie klienta lub na budowie.</p>
+            </div>
+            <a class="btn btn--dark btn--sm" href="#kontakt">Zapytaj o termin<svg class="icon"><use href="#i-arrow"/></svg></a>
+          </article>
         </div>
       </div>
     </section>
@@ -331,7 +381,7 @@
             </li>
             <li class="why__item reveal">
               <span class="card__icon"><svg class="icon"><use href="#i-flame"/></svg></span>
-              <div><h3>Służby spawalnicze i kontrola jakości</h3><p>Dobrze zorganizowane, specjalistyczne służby spawalnicze oraz kontroli jakości robót.</p></div>
+              <div><h3>Spawanie pod kontrolą jakości</h3><p>Wykwalifikowani spawacze z uprawnieniami i własna kontrola jakości — każde połączenie spawane sprawdzamy przed odbiorem.</p></div>
             </li>
             <li class="why__item reveal">
               <span class="card__icon"><svg class="icon"><use href="#i-users"/></svg></span>
@@ -378,7 +428,7 @@
         <div class="section-head reveal">
           <p class="eyebrow">Realizacje</p>
           <h2>Nasza praca z bliska</h2>
-          <p>Prawdziwe zdjęcia z naszych zleceń — kotłownie, zakłady produkcyjne i instalacje przemysłowe w całej Polsce.</p>
+          <p>Realizacje naszych zleceń — kotłownie, zakłady produkcyjne i instalacje przemysłowe w całej Polsce.</p>
         </div>
         <div class="gallery" id="gallery">
           <a class="gallery__item" href="assets/img/g-remont-komory-nawrotnej-1400.webp" data-caption="Prace remontowe przy komorze nawrotnej kotła">
@@ -456,68 +506,21 @@
           <h2>Pracujemy dla przemysłu i instytucji</h2>
           <p>Znamy specyfikę zakładów, w których para i ciepło technologiczne decydują o ciągłości produkcji.</p>
         </div>
-        <div class="industries">
-          <article class="card industry reveal">
-            <span class="card__icon"><svg class="icon"><use href="#i-beer"/></svg></span>
-            <div><h3>Spożywczy i browarniczy</h3><p>Browary, mleczarnie, cukrownie, gorzelnie, zakłady przetwórstwa mięsnego.</p></div>
-          </article>
-          <article class="card industry reveal">
-            <span class="card__icon"><svg class="icon"><use href="#i-pill"/></svg></span>
-            <div><h3>Farmaceutyczny i kosmetyczny</h3><p>Autoklawy, wytwornice pary czystej i instalacje technologiczne.</p></div>
-          </article>
-          <article class="card industry reveal">
-            <span class="card__icon"><svg class="icon"><use href="#i-flask"/></svg></span>
-            <div><h3>Chemiczny i hutniczy</h3><p>Zbiorniki, rurociągi i urządzenia pracujące w wymagających warunkach.</p></div>
-          </article>
-          <article class="card industry reveal">
-            <span class="card__icon"><svg class="icon"><use href="#i-zap"/></svg></span>
-            <div><h3>Energetyka i ciepłownictwo</h3><p>Kotły parowe i wodne, wymienniki oraz sieci rurociągów.</p></div>
-          </article>
-          <article class="card industry reveal">
-            <span class="card__icon"><svg class="icon"><use href="#i-layers"/></svg></span>
-            <div><h3>Gumowy i tworzyw sztucznych</h3><p>Autoklawy i kotły dostarczające parę do procesów produkcji.</p></div>
-          </article>
-          <article class="card industry reveal">
-            <span class="card__icon"><svg class="icon"><use href="#i-heart"/></svg></span>
-            <div><h3>Medycyna i ochrona zdrowia</h3><p>Szpitale i placówki medyczne — kotłownie i urządzenia ciśnieniowe.</p></div>
-          </article>
-        </div>
-        <p class="industries-note reveal">Współpracujemy także z cegielniami i jednostkami budżetowymi.</p>
-      </div>
-    </section>
-
-    <!-- O FIRMIE -->
-    <section class="section" id="o-firmie">
-      <div class="container about">
-        <div class="about__text reveal">
-          <p class="eyebrow">O firmie</p>
-          <h2>Ponad 30 lat doświadczenia w&nbsp;urządzeniach ciśnieniowych</h2>
-          <p class="lead">Przedsiębiorstwo Usługowo-Handlowe TOMKO rozpoczęło działalność w 1994 roku jako kontynuacja firmy ARGAJ. Początkowo specjalizowaliśmy się w handlu armaturą przemysłową.</p>
-          <p>Dziś naszą główną działalnością są remonty i modernizacje urządzeń ciśnieniowych podlegających Urzędowi Dozoru Technicznego. Firma, jak i jej pracownicy, posiadają certyfikaty UDT niezbędne do wykonywania tych usług. Dysponujemy:</p>
-          <ul class="about__list">
-            <li><svg class="icon"><use href="#i-check"/></svg>doświadczoną załogą,</li>
-            <li><svg class="icon"><use href="#i-check"/></svg>dobrze zorganizowanymi, specjalistycznymi służbami spawalniczymi i kontroli jakości robót,</li>
-            <li><svg class="icon"><use href="#i-check"/></svg>parkiem maszynowym i bazą transportową, które pozwalają samodzielnie realizować podejmowane zadania.</li>
-          </ul>
-          <div class="timeline">
-            <div class="timeline__item"><div class="timeline__year">1994</div><p>Start działalności — handel armaturą przemysłową, kontynuacja firmy ARGAJ.</p></div>
-            <div class="timeline__item"><div class="timeline__year">Dziś</div><p>Remonty i modernizacje urządzeń pod dozorem UDT na terenie całego kraju.</p></div>
-          </div>
-          <div class="about__sign">
-            <span class="avatar" aria-hidden="true">TW</span>
-            <div><strong>Tomasz Woźniak</strong><span>właściciel</span></div>
-          </div>
-        </div>
-        <div class="about__media reveal">
-          <img src="assets/img/zespol-tomko-640.webp" srcset="assets/img/zespol-tomko-640.webp 640w, assets/img/zespol-tomko-1100.webp 1100w" sizes="(max-width: 1024px) 50vw, 300px" width="640" height="853" loading="lazy" decoding="async" alt="Pracownicy TOMKO omawiają prace przy otwartym kotle">
-          <img src="assets/img/ekipa-kotlownia-640.webp" srcset="assets/img/ekipa-kotlownia-640.webp 640w, assets/img/ekipa-kotlownia-1100.webp 1100w" sizes="(max-width: 1024px) 50vw, 300px" width="640" height="480" loading="lazy" decoding="async" alt="Ekipa TOMKO w kamizelkach odblaskowych podczas remontu kotła">
-          <img src="assets/img/g-ekipa-przy-kotle-640.webp" sizes="(max-width: 1024px) 50vw, 300px" width="640" height="853" loading="lazy" decoding="async" alt="Pracownicy TOMKO przy kotle w trakcie remontu">
-        </div>
+        <ul class="industries">
+          <li class="card industry reveal"><span class="card__icon"><svg class="icon"><use href="#i-beer"/></svg></span><h3>Spożywczy i&nbsp;browarniczy</h3></li>
+          <li class="card industry reveal"><span class="card__icon"><svg class="icon"><use href="#i-pill"/></svg></span><h3>Farmaceutyczny i&nbsp;kosmetyczny</h3></li>
+          <li class="card industry reveal"><span class="card__icon"><svg class="icon"><use href="#i-flask"/></svg></span><h3>Chemiczny i&nbsp;hutniczy</h3></li>
+          <li class="card industry reveal"><span class="card__icon"><svg class="icon"><use href="#i-zap"/></svg></span><h3>Energetyka i&nbsp;ciepłownictwo</h3></li>
+          <li class="card industry reveal"><span class="card__icon"><svg class="icon"><use href="#i-layers"/></svg></span><h3>Gumowy i&nbsp;tworzyw sztucznych</h3></li>
+          <li class="card industry reveal"><span class="card__icon"><svg class="icon"><use href="#i-heart"/></svg></span><h3>Medycyna i&nbsp;ochrona zdrowia</h3></li>
+          <li class="card industry reveal"><span class="card__icon"><svg class="icon"><use href="#i-brick"/></svg></span><h3>Cegielnie</h3></li>
+          <li class="card industry reveal"><span class="card__icon"><svg class="icon"><use href="#i-landmark"/></svg></span><h3>Jednostki budżetowe</h3></li>
+        </ul>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section section--soft" id="faq">
+    <section class="section" id="faq">
       <div class="container">
         <div class="section-head section-head--center reveal">
           <p class="eyebrow">Najczęstsze pytania</p>
@@ -545,8 +548,8 @@
             <p>Na terenie całej Polski. Nasza siedziba mieści się w Przeźmierowie pod Poznaniem.</p>
           </details>
           <details>
-            <summary>Czy montujecie nowe kotły?<svg class="icon"><use href="#i-plus"/></svg></summary>
-            <p>Nie — specjalizujemy się w remontach, modernizacjach, przeglądach i próbach istniejących urządzeń. Dostarczamy natomiast armaturę przemysłową według zapotrzebowania.</p>
+            <summary>Czy wykonujecie prace spawalnicze niezwiązane z UDT?<svg class="icon"><use href="#i-plus"/></svg></summary>
+            <p>Tak. Oprócz remontów urządzeń pod dozorem wykonujemy prace spawalnicze na zlecenie, montaż urządzeń i instalacji oraz drobne konstrukcje stalowe.</p>
           </details>
         </div>
       </div>
@@ -580,15 +583,22 @@
         <div class="contact">
           <aside class="contact-card reveal">
             <h3>Kotły TOMKO</h3>
-            <p>Przedsiębiorstwo Usługowo-Handlowe TOMKO Tomasz Woźniak</p>
+            <p>Przedsiębiorstwo Usługowo-Handlowe TOMKO Tomasz Woźniak<br><span class="nip">NIP 777-100-02-14</span></p>
             <ul class="contact-list">
               <li>
                 <span class="card__icon"><svg class="icon"><use href="#i-phone"/></svg></span>
-                <div><small>Telefon — Tomasz Woźniak, właściciel</small><a class="big" href="tel:+48602628145">602 628 145</a></div>
+                <div><small>Biuro</small><a class="big" href="tel:+48600674392">600 674 392</a></div>
+              </li>
+              <li>
+                <span class="card__icon"><svg class="icon"><use href="#i-users"/></svg></span>
+                <div class="contact-people">
+                  <p><small>Tomasz Woźniak — właściciel, awarie</small><a class="big" href="tel:+48602628145">602 628 145</a></p>
+                  <p><small>Stanisław Woźniak</small><a class="big" href="tel:+48787180794">787 180 794</a></p>
+                </div>
               </li>
               <li>
                 <span class="card__icon"><svg class="icon"><use href="#i-mail"/></svg></span>
-                <div><small>E-mail</small><a href="mailto:tomko@kotlytomko.pl">tomko@kotlytomko.pl</a><br><a href="mailto:tomko1994@o2.pl">tomko1994@o2.pl</a></div>
+                <div><small>E-mail</small><a href="mailto:tomko1994@o2.pl">tomko1994@o2.pl</a><br><a href="mailto:tomko@kotlytomko.pl">tomko@kotlytomko.pl</a></div>
               </li>
               <li>
                 <span class="card__icon"><svg class="icon"><use href="#i-pin"/></svg></span>
@@ -645,6 +655,8 @@
                   <option>Awaria — pilne</option>
                   <option>Badania VT / PT</option>
                   <option>Armatura przemysłowa</option>
+                  <option>Prace spawalnicze / konstrukcje stalowe</option>
+                  <option>Montaż urządzeń</option>
                   <option>Inne</option>
                 </select>
               </div>
@@ -667,7 +679,7 @@
               </div>
             </div>
             <div class="form__footer">
-              <small>Wolisz zadzwonić? <a href="tel:+48602628145">602 628 145</a></small>
+              <small>Wolisz zadzwonić? <a href="tel:+48600674392">600 674 392</a></small>
               <button class="btn" type="submit">Wyślij zapytanie<svg class="icon"><use href="#i-arrow"/></svg></button>
             </div>
             <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
@@ -693,6 +705,7 @@
             <li><a href="#uslugi">Przeglądy okresowe</a></li>
             <li><a href="#uslugi">Badania VT i PT</a></li>
             <li><a href="#uslugi">Armatura przemysłowa</a></li>
+            <li><a href="#uslugi">Spawalnictwo i montaż</a></li>
           </ul>
         </div>
         <div>
@@ -709,8 +722,11 @@
           <h4>Kontakt</h4>
           <address>
             <strong style="color:#fff">P.U.H. TOMKO Tomasz Woźniak</strong><br>
-            ul. Folwarczna 48<br>62-081 Przeźmierowo<br><br>
-            <a href="tel:+48602628145">tel. 602 628 145</a><br>
+            ul. Folwarczna 48<br>62-081 Przeźmierowo<br>NIP 777-100-02-14<br><br>
+            <a href="tel:+48600674392">biuro: 600 674 392</a><br>
+            <a href="tel:+48602628145">T. Woźniak (awarie): 602 628 145</a><br>
+            <a href="tel:+48787180794">S. Woźniak: 787 180 794</a><br>
+            <a href="mailto:tomko1994@o2.pl">tomko1994@o2.pl</a><br>
             <a href="mailto:tomko@kotlytomko.pl">tomko@kotlytomko.pl</a>
           </address>
         </div>

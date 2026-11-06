@@ -9,7 +9,7 @@ declare(strict_types=1);
 ini_set('display_errors', '0');
 
 // ---------- Konfiguracja ----------
-const MAIL_TO      = 'tomko@kotlytomko.pl';
+const MAIL_TO      = 'tomko1994@o2.pl';
 const MAIL_FROM    = 'formularz@kotlytomko.pl'; // adres w domenie strony (lepsza dostarczalność)
 const MAIL_SUBJECT = 'Zapytanie ze strony kotlytomko.pl';
 const MIN_SECONDS  = 3;   // formularz wysłany szybciej = bot

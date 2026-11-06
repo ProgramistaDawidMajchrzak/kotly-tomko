@@ -18,6 +18,8 @@
   const toggle = $('.nav-toggle');
   const nav = $('#nav');
   const setMenu = (open) => {
+    // panel zaczyna się pod nagłówkiem — także gdy nad nim widać pasek z telefonami
+    if (open && header) document.documentElement.style.setProperty('--nav-top', Math.max(0, header.getBoundingClientRect().bottom) + 'px');
     document.body.classList.toggle('nav-open', open);
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
@@ -203,7 +205,7 @@
       ts.value = String(Date.now());
       setStatus('success', 'Dziękujemy! Zapytanie zostało wysłane — odezwiemy się najszybciej, jak to możliwe.');
     } catch (err) {
-      setStatus('error', 'Nie udało się wysłać wiadomości. Zadzwoń: 602 628 145 lub napisz na tomko@kotlytomko.pl.');
+      setStatus('error', 'Nie udało się wysłać wiadomości. Zadzwoń: 600 674 392 lub napisz na tomko1994@o2.pl.');
     } finally {
       btn.removeAttribute('aria-busy');
     }
@@ -215,6 +217,6 @@
     setStatus(params.get('wyslano') === '1' ? 'success' : 'error',
       params.get('wyslano') === '1'
         ? 'Dziękujemy! Zapytanie zostało wysłane.'
-        : 'Nie udało się wysłać wiadomości. Zadzwoń: 602 628 145.');
+        : 'Nie udało się wysłać wiadomości. Zadzwoń: 600 674 392.');
   }
 })();
