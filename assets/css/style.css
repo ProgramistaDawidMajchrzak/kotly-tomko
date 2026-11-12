@@ -210,7 +210,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .udt-plate img { height: 40px; width: auto; }
 .udt-plate span { font-size: .75rem; font-weight: 600; line-height: 1.25; color: var(--ink); max-width: 130px; }
 .udt-plate--header { padding: 4px 6px; border-radius: 8px; }
-.udt-plate--header img { height: 44px; }
+.udt-plate--header img { height: 56px; }
 .udt-plate--footer { margin-top: 22px; padding: 8px 14px 8px 10px; }
 .udt-plate--footer span { max-width: 170px; }
 .hero__badge-icon--udt { background: #fff; width: auto; height: auto; }
@@ -658,7 +658,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .service-extra { grid-template-columns: 1fr; gap: 16px; }
   .service-extra .btn { justify-self: start; }
   .logo img { height: 28px; }
-  .udt-plate--header img { height: 36px; }
+  .udt-plate--header img { height: 44px; }
   .header .container { gap: 14px; }
   .nav-toggle { margin-left: auto; }
   .udt-plate--about img { height: 32px; }
