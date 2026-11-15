@@ -37,6 +37,13 @@ def main():
         shutil.copy2(ROOT / f, OUT / f)
     for d in DIRS:
         shutil.copytree(ROOT / d, OUT / d)
+    # hasło SMTP: tylko lokalnie (gitignore) → do paczki na serwer
+    cfg = ROOT / "kontakt-config.php"
+    if cfg.exists():
+        shutil.copy2(cfg, OUT / cfg.name)
+        print("kontakt-config.php: dołączony")
+    else:
+        print("UWAGA: brak kontakt-config.php — formularz nie wyśle wiadomości (patrz kontakt-config.example.php)")
 
     # index.html: bez noindex, wersjonowanie CSS/JS
     p = OUT / "index.html"
